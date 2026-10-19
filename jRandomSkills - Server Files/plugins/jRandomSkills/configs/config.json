@@ -87,7 +87,7 @@
     ]
   },
   "LanguageSystem": {
-    "DefaultLangCode": "en",
+    "DefaultLangCode": "pl",
     "DisableGeoLite": false,
     "LanguageInfos": [
       {

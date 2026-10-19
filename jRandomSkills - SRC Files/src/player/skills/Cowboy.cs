@@ -18,6 +18,7 @@ namespace src.player.skills
         private static int? originalMaxClip;
         private static int? originalReserveMax;
         private static readonly Dictionary<uint, (int Clip, int Reserve)> reloadStarts = [];
+        private static readonly HashSet<uint> hudPlayers = [];
 
         public static void LoadSkill()
         {
@@ -28,6 +29,7 @@ namespace src.player.skills
         {
             RestoreRevolverData();
             reloadStarts.Clear();
+            hudPlayers.Clear();
         }
 
         public static void EnableSkill(CCSPlayerController player)
@@ -80,17 +82,34 @@ namespace src.player.skills
         {
             PlayerManager.FillSkillHolders(skillName, holderBuffer);
             foreach (var player in holderBuffer.ToArray())
-                RemoveRevolver(player);
+            {
+                try
+                {
+                    RemoveRevolver(player);
+                }
+                catch (Exception ex)
+                {
+                    Server.PrintToConsole($"[jRandomSkills] Cowboy.RoundEnd failed: {ex.Message}");
+                }
+            }
         }
 
+        // Called from the round reset loop, which is not guarded, so nothing here may throw
         public static void DisableSkill(CCSPlayerController player)
         {
-            RemoveRevolver(player);
-            SkillUtils.ResetPrintHTML(player);
+            try
+            {
+                RemoveRevolver(player);
+                ClearHUD(player);
 
-            PlayerManager.FillSkillHolders(skillName, holderBuffer);
-            if (holderBuffer.All(holder => holder.Key() == player.Key()))
-                RestoreRevolverData();
+                PlayerManager.FillSkillHolders(skillName, holderBuffer);
+                if (holderBuffer.All(holder => holder.Key() == player.Key()))
+                    RestoreRevolverData();
+            }
+            catch (Exception ex)
+            {
+                Server.PrintToConsole($"[jRandomSkills] Cowboy.DisableSkill failed: {ex.Message}");
+            }
         }
 
         public static void OnTick()
@@ -112,7 +131,7 @@ namespace src.player.skills
                 var activeWeapon = pawn.WeaponServices.ActiveWeapon.Value;
                 if (activeWeapon == null || !activeWeapon.IsValid || !IsRevolver(activeWeapon))
                 {
-                    if (hudFrame) SkillUtils.ResetPrintHTML(player);
+                    if (hudFrame) ClearHUD(player);
                     continue;
                 }
 
@@ -166,6 +185,14 @@ namespace src.player.skills
 
             int magazines = (int)Math.Ceiling(weapon.ReserveAmmo[0] / (double)weapon.VData.MaxClip1);
             playerInfo.PrintHTML = player.GetTranslation("cowboy_hud", $"<font color='#c88a3d'>{magazines}</font>");
+            hudPlayers.Add(player.Key());
+        }
+
+        // Only clear the HUD text this skill set, so the skill name and description shown by the core are left alone
+        private static void ClearHUD(CCSPlayerController player)
+        {
+            if (hudPlayers.Remove(player.Key()))
+                SkillUtils.ResetPrintHTML(player);
         }
 
         // The game clamps the magazine and the reserve to the weapon data limits, which every R8 shares,
