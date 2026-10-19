@@ -118,7 +118,6 @@
 
   "cowboy": "Kucharek",
   "cowboy_desc": "Tu reçois un revolver avec un chargeur agrandi qui tire instantanément avec le clic gauche",
-  "cowboy_hud": "Chargeurs en réserve : {0}",
 
   "darkness": "Obscurité",
   "darkness_desc": "Applique un effet d’obscurité à un ennemi choisi",

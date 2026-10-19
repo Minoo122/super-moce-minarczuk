@@ -18,7 +18,6 @@ namespace src.player.skills
         private static int? originalMaxClip;
         private static int? originalReserveMax;
         private static readonly Dictionary<uint, (int Clip, int Reserve)> reloadStarts = [];
-        private static readonly HashSet<uint> hudPlayers = [];
 
         public static void LoadSkill()
         {
@@ -29,7 +28,6 @@ namespace src.player.skills
         {
             RestoreRevolverData();
             reloadStarts.Clear();
-            hudPlayers.Clear();
         }
 
         public static void EnableSkill(CCSPlayerController player)
@@ -100,7 +98,6 @@ namespace src.player.skills
             try
             {
                 RemoveRevolver(player);
-                ClearHUD(player);
 
                 PlayerManager.FillSkillHolders(skillName, holderBuffer);
                 if (holderBuffer.All(holder => holder.Key() == player.Key()))
@@ -119,7 +116,6 @@ namespace src.player.skills
 
             int now = Server.TickCount;
             int fireDelayTicks = Math.Max((int)Math.Ceiling(SkillsInfo.GetValue<float>(skillName, "fireDelay") / Server.TickInterval), 1);
-            bool hudFrame = SkillUtils.IsHudFrame();
 
             foreach (var player in holderBuffer)
             {
@@ -129,15 +125,10 @@ namespace src.player.skills
                 if (pawn == null || !pawn.IsValid || pawn.WeaponServices == null) continue;
 
                 var activeWeapon = pawn.WeaponServices.ActiveWeapon.Value;
-                if (activeWeapon == null || !activeWeapon.IsValid || !IsRevolver(activeWeapon))
-                {
-                    if (hudFrame) ClearHUD(player);
-                    continue;
-                }
+                if (activeWeapon == null || !activeWeapon.IsValid || !IsRevolver(activeWeapon)) continue;
 
                 var weapon = activeWeapon.As<CCSWeaponBase>();
                 UpdateReload(weapon);
-                if (hudFrame) UpdateHUD(player, weapon);
 
                 // Skip the hammer cocking delay before a primary shot
                 if (weapon.PostponeFireReadyTicks > now)
@@ -176,23 +167,6 @@ namespace src.player.skills
 
             weapon.ReserveAmmo[0] = reserve;
             Utilities.SetStateChanged(weapon, "CBasePlayerWeapon", "m_pReserveAmmo");
-        }
-
-        private static void UpdateHUD(CCSPlayerController player, CCSWeaponBase weapon)
-        {
-            var playerInfo = PlayerManager.GetPlayer(player);
-            if (playerInfo == null || weapon.VData == null || weapon.VData.MaxClip1 <= 0) return;
-
-            int magazines = (int)Math.Ceiling(weapon.ReserveAmmo[0] / (double)weapon.VData.MaxClip1);
-            playerInfo.PrintHTML = player.GetTranslation("cowboy_hud", $"<font color='#c88a3d'>{magazines}</font>");
-            hudPlayers.Add(player.Key());
-        }
-
-        // Only clear the HUD text this skill set, so the skill name and description shown by the core are left alone
-        private static void ClearHUD(CCSPlayerController player)
-        {
-            if (hudPlayers.Remove(player.Key()))
-                SkillUtils.ResetPrintHTML(player);
         }
 
         // The game clamps the magazine and the reserve to the weapon data limits, which every R8 shares,

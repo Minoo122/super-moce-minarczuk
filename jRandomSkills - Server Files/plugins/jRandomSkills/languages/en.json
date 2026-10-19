@@ -118,7 +118,6 @@
 
   "cowboy": "Kucharek",
   "cowboy_desc": "You get a revolver with an extended magazine that fires instantly with the left mouse button",
-  "cowboy_hud": "Spare magazines: {0}",
 
   "darkness": "Darkness",
   "darkness_desc": "Applies a darkness effect to a chosen enemy",
