@@ -102,6 +102,10 @@
   "cypher_desc": "Kliknij [css_useSkill], aby utworzyć/przełączyć się na kamerę",
   "cypher_nospace": "Kamera musi być ustawiona pod kątem prostym do ściany",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "Dostajesz rewolwer z powiększonym magazynkiem, który strzela natychmiast lewym przyciskiem myszy",
+  "cowboy_hud": "Magazynki w zapasie: {0}",
+
   "darkness": "Mrok",
   "darkness_desc": "Nadaje efekt ciemności wybranemu przeciwnikowi",
   "darkness_enemy_info": "Niech zgasną światła.",

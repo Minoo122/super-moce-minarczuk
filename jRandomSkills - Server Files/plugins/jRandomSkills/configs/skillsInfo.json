@@ -941,6 +941,24 @@
     "Rarity": "Common"
   },
   {
+    "NeedsTeammates": false,
+    "DisableOnFreezeTime": false,
+    "DisableOnPistolRound": false,
+    "OnlyTeam": 0,
+    "Color": "#c88a3d",
+    "Active": true,
+    "Name": "Cowboy",
+    "FireDelay": 0.35,
+    "ClipSize": 18,
+    "ReserveMagazines": 6,
+    "HudDuration": null,
+    "DescriptionHudDuration": null,
+    "RequiredPermission": "",
+    "MaxPerServer": -1,
+    "MinPlayer": 0,
+    "Rarity": "Common"
+  },
+  {
     "FriendlyFire": true,
     "NeedsTeammates": false,
     "DisableOnFreezeTime": false,

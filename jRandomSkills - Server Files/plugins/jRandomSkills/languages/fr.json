@@ -102,6 +102,10 @@
   "cypher_desc": "Cliquez sur [css_useSkill] pour créer/passer à une caméra.",
   "cypher_nospace": "La caméra doit être positionnée à angle droit par rapport au mur",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "Tu reçois un revolver avec un chargeur agrandi qui tire instantanément avec le clic gauche",
+  "cowboy_hud": "Chargeurs en réserve : {0}",
+
   "darkness": "Obscurité",
   "darkness_desc": "Applique un effet d’obscurité à un ennemi choisi",
   "darkness_enemy_info": "Que la lumière s’éteigne.",

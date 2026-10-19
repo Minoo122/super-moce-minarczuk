@@ -102,6 +102,10 @@
   "cypher_desc": "Klicken Sie auf [css_useSkill], um eine Kamera zu erstellen/zu wechseln",
   "cypher_nospace": "Die Kamera muss im rechten Winkel zur Wand positioniert werden",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "Du erhältst einen Revolver mit vergrößertem Magazin, der mit der linken Maustaste sofort feuert",
+  "cowboy_hud": "Ersatzmagazine: {0}",
+
   "darkness": "Dunkelheit",
   "darkness_desc": "Wendet einen Dunkelheitseffekt auf einen ausgewählten Gegner an",
   "darkness_enemy_info": "Lass die Lichter ausgehen",

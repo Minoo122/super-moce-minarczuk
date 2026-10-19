@@ -102,6 +102,10 @@
   "cypher_desc": "Clique em [css_useSkill] para criar/mudar para uma câmera",
   "cypher_nospace": "A câmera deve ser posicionada em ângulo reto com a parede",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "Você recebe um revólver com pente ampliado que dispara instantaneamente com o botão esquerdo do mouse",
+  "cowboy_hud": "Pentes de reserva: {0}",
+
   "darkness": "Escuridão",
   "darkness_desc": "Aplica um efeito de escuridão a um inimigo escolhido",
   "darkness_enemy_info": "Que as luzes se apaguem.",

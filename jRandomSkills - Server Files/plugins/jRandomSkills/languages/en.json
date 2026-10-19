@@ -102,6 +102,10 @@
   "cypher_desc": "Click [css_useSkill] to create/switch to a camera",
   "cypher_nospace": "The camera must be positioned at right angles to the wall",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "You get a revolver with an extended magazine that fires instantly with the left mouse button",
+  "cowboy_hud": "Spare magazines: {0}",
+
   "darkness": "Darkness",
   "darkness_desc": "Applies a darkness effect to a chosen enemy",
   "darkness_enemy_info": "Let the lights go out.",

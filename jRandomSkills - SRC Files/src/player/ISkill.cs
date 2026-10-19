@@ -214,4 +214,5 @@ public enum Skills
     Weightless,
     WildThrow,
     Zeus,
+    Cowboy,
 }

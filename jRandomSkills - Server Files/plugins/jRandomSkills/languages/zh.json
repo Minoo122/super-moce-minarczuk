@@ -96,6 +96,10 @@
   "cypher_desc": "点击 [css_useSkill] 创建/切换摄像机",
   "cypher_nospace": "相机必须与墙壁呈直角放置",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "你会获得一把扩容弹匣的左轮手枪，按鼠标左键即可瞬间开火",
+  "cowboy_hud": "备用弹匣：{0}",
+
   "darkness": "黑暗",
   "darkness_desc": "对选定的敌人施加黑暗效果",
   "darkness_enemy_info": "让灯光熄灭。",

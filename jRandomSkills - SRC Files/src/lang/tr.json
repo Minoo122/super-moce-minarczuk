@@ -102,6 +102,10 @@
   "cypher_desc": "[css_useSkill] tuşuna basarak kamera kur ve kameraya geç",
   "cypher_nospace": "Kamerayı duvara dik yerleştir",
 
+  "cowboy": "Kucharek",
+  "cowboy_desc": "Genişletilmiş şarjörlü, sol fare tuşuyla anında ateş eden bir revolver alırsın",
+  "cowboy_hud": "Yedek şarjörler: {0}",
+
   "darkness": "Karanlık",
   "darkness_desc": "Düşmanın ekranını karart",
   "darkness_enemy_info": "Işıklar sönsün.",
