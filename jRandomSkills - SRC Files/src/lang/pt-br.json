@@ -116,8 +116,11 @@
   "cypher_desc": "Clique em [css_useSkill] para criar/mudar para uma câmera",
   "cypher_nospace": "A câmera deve ser posicionada em ângulo reto com a parede",
 
-  "cowboy": "Kucharek",
+  "cowboy": "Caubói",
   "cowboy_desc": "Você recebe um revólver com pente ampliado que dispara instantaneamente com o botão esquerdo do mouse",
+
+  "remik": "Remik",
+  "remik_desc": "Você só pode atirar em movimento e recebe granadas a cada 20 segundos",
 
   "darkness": "Escuridão",
   "darkness_desc": "Aplica um efeito de escuridão a um inimigo escolhido",

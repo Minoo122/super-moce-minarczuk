@@ -116,8 +116,11 @@
   "cypher_desc": "Click [css_useSkill] to create/switch to a camera",
   "cypher_nospace": "The camera must be positioned at right angles to the wall",
 
-  "cowboy": "Kucharek",
+  "cowboy": "Cowboy",
   "cowboy_desc": "You get a revolver with an extended magazine that fires instantly with the left mouse button",
+
+  "remik": "Remik",
+  "remik_desc": "You can only shoot while moving, and you get grenades every 20 seconds",
 
   "darkness": "Darkness",
   "darkness_desc": "Applies a darkness effect to a chosen enemy",

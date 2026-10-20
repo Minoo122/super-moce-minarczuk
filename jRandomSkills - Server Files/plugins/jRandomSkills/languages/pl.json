@@ -119,6 +119,9 @@
   "cowboy": "Kucharek",
   "cowboy_desc": "Dostajesz rewolwer z powiększonym magazynkiem, który strzela natychmiast lewym przyciskiem myszy",
 
+  "remik": "Remik",
+  "remik_desc": "Możesz strzelać tylko w ruchu, a co 20 sekund dostajesz granaty",
+
   "darkness": "Mrok",
   "darkness_desc": "Nadaje efekt ciemności wybranemu przeciwnikowi",
   "darkness_enemy_info": "Niech zgasną światła.",

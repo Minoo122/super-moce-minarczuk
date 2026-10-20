@@ -225,4 +225,5 @@ public enum Skills
     WildThrow,
     Zeus,
     Cowboy,
+    Remik,
 }

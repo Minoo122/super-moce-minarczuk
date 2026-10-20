@@ -116,8 +116,11 @@
   "cypher_desc": "[css_useSkill] tuşuna basarak kamera kur ve kameraya geç",
   "cypher_nospace": "Kamerayı duvara dik yerleştir",
 
-  "cowboy": "Kucharek",
+  "cowboy": "Kovboy",
   "cowboy_desc": "Genişletilmiş şarjörlü, sol fare tuşuyla anında ateş eden bir revolver alırsın",
+
+  "remik": "Remik",
+  "remik_desc": "Sadece hareket halindeyken ateş edebilirsin ve her 20 saniyede bir bomba alırsın",
 
   "darkness": "Karanlık",
   "darkness_desc": "Düşmanın ekranını karart",

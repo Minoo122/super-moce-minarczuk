@@ -116,8 +116,11 @@
   "cypher_desc": "Klicken Sie auf [css_useSkill], um eine Kamera zu erstellen/zu wechseln",
   "cypher_nospace": "Die Kamera muss im rechten Winkel zur Wand positioniert werden",
 
-  "cowboy": "Kucharek",
+  "cowboy": "Cowboy",
   "cowboy_desc": "Du erhältst einen Revolver mit vergrößertem Magazin, der mit der linken Maustaste sofort feuert",
+
+  "remik": "Remik",
+  "remik_desc": "Du kannst nur in Bewegung schießen und erhältst alle 20 Sekunden Granaten",
 
   "darkness": "Dunkelheit",
   "darkness_desc": "Wendet einen Dunkelheitseffekt auf einen ausgewählten Gegner an",

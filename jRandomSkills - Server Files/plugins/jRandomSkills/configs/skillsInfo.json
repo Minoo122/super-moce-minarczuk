@@ -1058,6 +1058,23 @@
     "Rarity": "Epic"
   },
   {
+    "NeedsTeammates": false,
+    "DisableOnFreezeTime": false,
+    "DisableOnPistolRound": false,
+    "OnlyTeam": 0,
+    "Color": "#7fb3d5",
+    "Active": true,
+    "Name": "Remik",
+    "MinSpeed": 120.0,
+    "GrenadeInterval": 20.0,
+    "HudDuration": null,
+    "DescriptionHudDuration": null,
+    "RequiredPermission": "",
+    "MaxPerServer": -1,
+    "MinPlayer": 0,
+    "Rarity": "Common"
+  },
+  {
     "FriendlyFire": true,
     "NeedsTeammates": false,
     "DisableOnFreezeTime": false,
