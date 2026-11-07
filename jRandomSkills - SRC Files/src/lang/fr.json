@@ -122,6 +122,13 @@
   "remik": "Remik",
   "remik_desc": "Tu ne peux tirer qu'en mouvement, et tu reçois des grenades toutes les 20 secondes",
 
+  "portal": "Portail",
+  "portal_desc": "Clique sur [css_useSkill] pour poser un portail (orange et bleu en alternance). Entre dans l'un pour ressortir par l'autre",
+  "portal_ground_info": "Tu ne peux poser un portail que debout sur le sol.",
+  "portal_too_close_info": "Trop près de l'autre portail.",
+  "portal_placed_info": "Portail {0} posé.",
+  "portal_next_info": "Prochain portail : {0}",
+
   "darkness": "Obscurité",
   "darkness_desc": "Applique un effet d’obscurité à un ennemi choisi",
   "darkness_enemy_info": "Que la lumière s’éteigne.",

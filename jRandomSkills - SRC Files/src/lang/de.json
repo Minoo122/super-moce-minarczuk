@@ -122,6 +122,13 @@
   "remik": "Remik",
   "remik_desc": "Du kannst nur in Bewegung schießen und erhältst alle 20 Sekunden Granaten",
 
+  "portal": "Portal",
+  "portal_desc": "Drücke [css_useSkill], um ein Portal zu platzieren (abwechselnd orange und blau). Geh in eines hinein, um aus dem anderen herauszukommen",
+  "portal_ground_info": "Du kannst ein Portal nur auf dem Boden stehend platzieren.",
+  "portal_too_close_info": "Zu nah am anderen Portal.",
+  "portal_placed_info": "Portal {0} platziert.",
+  "portal_next_info": "Nächstes Portal: {0}",
+
   "darkness": "Dunkelheit",
   "darkness_desc": "Wendet einen Dunkelheitseffekt auf einen ausgewählten Gegner an",
   "darkness_enemy_info": "Lass die Lichter ausgehen",

@@ -226,4 +226,5 @@ public enum Skills
     Zeus,
     Cowboy,
     Remik,
+    Portal,
 }

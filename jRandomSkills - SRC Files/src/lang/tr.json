@@ -122,6 +122,13 @@
   "remik": "Remik",
   "remik_desc": "Sadece hareket halindeyken ateş edebilirsin ve her 20 saniyede bir bomba alırsın",
 
+  "portal": "Portal",
+  "portal_desc": "Portal yerleştirmek için [css_useSkill] tuşuna bas (sırayla turuncu ve mavi). Birine girip diğerinden çık",
+  "portal_ground_info": "Portalı yalnızca yerde dururken yerleştirebilirsin.",
+  "portal_too_close_info": "Diğer portala çok yakın.",
+  "portal_placed_info": "Portal {0} yerleştirildi.",
+  "portal_next_info": "Sonraki portal: {0}",
+
   "darkness": "Karanlık",
   "darkness_desc": "Düşmanın ekranını karart",
   "darkness_enemy_info": "Işıklar sönsün.",

@@ -122,6 +122,13 @@
   "remik": "Remik",
   "remik_desc": "You can only shoot while moving, and you get grenades every 20 seconds",
 
+  "portal": "Portal",
+  "portal_desc": "Click [css_useSkill] to place a portal (orange and blue alternately). Walk into one to come out of the other",
+  "portal_ground_info": "You can only place a portal while standing on the ground.",
+  "portal_too_close_info": "Too close to the other portal.",
+  "portal_placed_info": "Portal {0} placed.",
+  "portal_next_info": "Next portal: {0}",
+
   "darkness": "Darkness",
   "darkness_desc": "Applies a darkness effect to a chosen enemy",
   "darkness_enemy_info": "Let the lights go out.",

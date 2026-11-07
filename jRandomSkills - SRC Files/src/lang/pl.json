@@ -122,6 +122,13 @@
   "remik": "Remik",
   "remik_desc": "Możesz strzelać tylko w ruchu, a co 20 sekund dostajesz granaty",
 
+  "portal": "Portal",
+  "portal_desc": "Kliknij [css_useSkill], aby postawić portal (na zmianę pomarańczowy i niebieski). Wejdź w jeden, żeby wyjść z drugiego",
+  "portal_ground_info": "Portal możesz postawić tylko stojąc na ziemi.",
+  "portal_too_close_info": "Za blisko drugiego portalu.",
+  "portal_placed_info": "Postawiono portal {0}.",
+  "portal_next_info": "Następny portal: {0}",
+
   "darkness": "Mrok",
   "darkness_desc": "Nadaje efekt ciemności wybranemu przeciwnikowi",
   "darkness_enemy_info": "Niech zgasną światła.",

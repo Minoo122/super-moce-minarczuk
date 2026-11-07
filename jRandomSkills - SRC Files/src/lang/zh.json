@@ -116,6 +116,13 @@
   "remik": "Remik",
   "remik_desc": "你只能在移动时开火，并且每 20 秒获得手雷",
 
+  "portal": "传送门",
+  "portal_desc": "按 [css_useSkill] 放置传送门（橙色和蓝色交替）。走进一个即可从另一个出来",
+  "portal_ground_info": "只有站在地面上时才能放置传送门。",
+  "portal_too_close_info": "离另一个传送门太近了。",
+  "portal_placed_info": "已放置传送门 {0}。",
+  "portal_next_info": "下一个传送门：{0}",
+
   "darkness": "黑暗",
   "darkness_desc": "对选定的敌人施加黑暗效果",
   "darkness_enemy_info": "让灯光熄灭。",

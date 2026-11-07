@@ -122,6 +122,13 @@
   "remik": "Remik",
   "remik_desc": "Você só pode atirar em movimento e recebe granadas a cada 20 segundos",
 
+  "portal": "Portal",
+  "portal_desc": "Clique em [css_useSkill] para colocar um portal (laranja e azul alternadamente). Entre em um para sair pelo outro",
+  "portal_ground_info": "Você só pode colocar um portal estando no chão.",
+  "portal_too_close_info": "Muito perto do outro portal.",
+  "portal_placed_info": "Portal {0} colocado.",
+  "portal_next_info": "Próximo portal: {0}",
+
   "darkness": "Escuridão",
   "darkness_desc": "Aplica um efeito de escuridão a um inimigo escolhido",
   "darkness_enemy_info": "Que as luzes se apaguem.",
